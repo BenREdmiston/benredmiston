@@ -1,6 +1,6 @@
 .flip-card {
   background-color: transparent;
-  width: 200px; /* Reduce card width */
+  width: 300px; /* Reduce card width */
   height: 250px; /* Reduce card height */
   perspective: 1000px;
   margin: 10px;
@@ -33,11 +33,11 @@
 }
 
 .flip-card-front {
-  background-color: #fff;
+  background-color: #7c7b7b;
 }
 
 .flip-card-back {
-  background-color: #f1f1f1;
+  background-color: #d4d4d4;
   transform: rotateY(180deg);
 }
 

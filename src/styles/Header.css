@@ -1,13 +1,16 @@
 .header {
   background-color: #282c34;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
 .header-title {
   font-size: 2.5em;
   margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 10px;
 }
 
 .header-nav {
@@ -23,4 +26,21 @@
 
 .header-nav a:hover {
   text-decoration: underline;
+}
+
+.header-avatar {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 5px;
+  border-radius: 50%;
+  margin-left: 0;
+  border:#201f1f 5px solid;
+}
+
+.header-description {
+  list-style: none;
+  font-size: 1.2em;
+  margin-top: 40px;
+  color: #ccc;
 }

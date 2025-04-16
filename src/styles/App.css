@@ -3,11 +3,14 @@ body {
   flex-direction: column;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #282c34; /* Dark background for the body */
+  height: 100vh; /* Ensure the body takes the full viewport height */
+  overflow: hidden; /* Prevent scrolling */
 }
 
 .App {
   text-align: center;
+  height: 100%; /* Ensure the App container takes full height */
 }
 
 .App-header {
@@ -16,11 +19,33 @@ body {
   color: white;
 }
 
-.container {
+.main-layout {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping to multiple rows */
-  justify-content: space-evenly; /* Distributes cards evenly */
-  margin: 20px auto;
-  max-width: 1000px; /* Adjust the container width */
+  flex-direction: row; /* Arrange Header and container side by side */
+  align-items: stretch; /* Stretch items to fill the height */
+  height: 100%; /* Full height of the viewport */
+  gap: 20px; /* Add spacing between Header and container */
+  padding: 20px;
 }
 
+.header {
+  width: 20%; /* Set a fixed width for the header */
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  flex-shrink: 0; /* Prevent the header from shrinking */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  height: 100%; /* Full height of the page */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+  grid-template-rows: repeat(2, 1fr); /* Create 2 rows */
+  gap: 20px; /* Add spacing between cards */
+  flex-grow: 1; /* Allow the container to take remaining space */
+  align-items: center;
+  justify-items: center;
+}
