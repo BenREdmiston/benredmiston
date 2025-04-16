@@ -4,7 +4,7 @@ import '../../styles/sections/Contact.css';
 function Contact() {
   return (
     <div className="contact">
-      <h2>Contact Me</h2>
+      <h2 className='cardTitle'>Contact Me</h2>
       <p>Email: benjammin@example.com</p>
       <p>Phone: (123) 456-7890</p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/benjammin" target="_blank" rel="noopener noreferrer">linkedin.com/in/benjammin</a></p>

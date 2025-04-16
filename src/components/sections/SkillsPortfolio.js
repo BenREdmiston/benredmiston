@@ -4,7 +4,7 @@ import '../../styles/sections/SkillsPortfolio.css';
 const SkillsPortfolio = () => {
   return (
     <div className="skills-portfolio">
-      <h2>Skills & Portfolio</h2>
+      <h2 className='cardTitle'>Skills & Portfolio</h2>
       <ul>
         <li>JavaScript</li>
         <li>React</li>

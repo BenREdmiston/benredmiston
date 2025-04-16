@@ -1,14 +1,7 @@
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
-}
-
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 400px;
+  width: 200px; /* Reduce card width */
+  height: 250px; /* Reduce card height */
   perspective: 1000px;
   margin: 10px;
 }
@@ -36,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 9px; /* Adjust font size for smaller cards */
 }
 
 .flip-card-front {
@@ -46,4 +39,12 @@
 .flip-card-back {
   background-color: #f1f1f1;
   transform: rotateY(180deg);
+}
+
+/* Card styling fonts and colour */
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
 }

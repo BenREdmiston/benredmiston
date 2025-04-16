@@ -4,7 +4,7 @@ import '../../styles/sections/About.css';
 function About() {
   return (
     <div className="about-section">
-      <h2>About Me</h2>
+      <h2 className='cardTitle'>About Me</h2>
       <p>
         I am a passionate developer with a love for creating dynamic and responsive web applications. 
         My journey in tech started with a curiosity for how things work, and it has evolved into a 
