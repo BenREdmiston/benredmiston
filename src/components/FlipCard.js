@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../styles/FlipCard.css';
 
 const FlipCard = ({ frontContent, backContent }) => {
   const [flipped, setFlipped] = useState(false);
@@ -9,12 +8,22 @@ const FlipCard = ({ frontContent, backContent }) => {
   };
 
   return (
-    <div className={`flip-card ${flipped ? 'flipped' : ''}`} onClick={handleFlip}>
-      <div className="flip-card-inner">
-        <div className="flip-card-front">
+    <div
+      className="w-[300px] h-[250px] perspective-[1000px] m-2 bg-transparent cursor-pointer"
+      onClick={handleFlip}
+    >
+      <div
+        className={`relative w-full h-full transition-transform duration-500 transform-style-preserve-3d ${
+          flipped ? 'rotate-y-180' : ''
+        }`}
+      >
+        {/* Front Side */}
+        <div className="absolute w-full h-full bg-gray-200 flex items-center justify-center border border-gray-300 rounded-lg backface-hidden">
           {frontContent}
         </div>
-        <div className="flip-card-back">
+
+        {/* Back Side */}
+        <div className="absolute w-full h-full bg-gray-400 flex items-center justify-center border border-gray-300 rounded-lg backface-hidden rotate-y-180">
           {backContent}
         </div>
       </div>

@@ -1,16 +1,12 @@
 import React from 'react';
-import '../styles/Header.css';
 
 function Header() {
   return (
-    <header className="header">
-      <h1 className="header-title">Benjamin Edmiston</h1>
-      <img src="https://avatars.githubusercontent.com/u/77869567?s=400&u=000e963c53758701e07014fa9bb810146f5887c7&v=4" alt="Benjamin Edmiston" className="header-avatar" />
-      <ul className="header-description">
-        <li> Web Designer </li>
-        <li> Poo </li>
-        <li> Wee </li>
-      </ul>
+    <header className="relative top-0 left-0 h-screen w-60 flex flex-col m-0 bg-gray-800 text-white shadow-lg p-4">
+      <button title="About" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">About</button>
+      <button title="Contact" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Contact</button>
+      <button title="Skills/Portfolio" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Skills/Portfolio</button>
+      <button title="Introduction" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Introduction</button>
     </header>
   );
 }

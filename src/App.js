@@ -1,34 +1,27 @@
 import React from 'react';
 import Header from './components/Header';
-import FlipCard from './components/FlipCard';
-import './styles/App.css';
+import SidebarLayout from './components/SidebarLayout';
+// import Tabs from './components/Tabs';
+
 
 function App() {
-  return (
-    <div className="App">
-      <div className='main-layout'>
-        <Header />
-          <div className="container">
-            <FlipCard 
-              frontContent={<h3 className='cardTitle'>Introduction</h3>} 
-              backContent={<p>This is the Introduction section content.</p>} 
-            />
-            <FlipCard 
-              frontContent={<h3 className='cardTitle'>About Me</h3>} 
-              backContent={<p>This is the About Me section content.</p>} 
-            />
-            <FlipCard 
-              frontContent={<h3 className='cardTitle'>Contact</h3>} 
-              backContent={<p>This is the Contact section content.</p>} 
-            />
-            <FlipCard 
-              frontContent={<h3 className='cardTitle'>Skills/Portfolio</h3>} 
-              backContent={<p>This is the Skills/Portfolio section content.</p>} 
-            />
-          </div>
-        </div>
+  return ( 
+    <div className="relative flex-row bg-gray-800 text-white h-screen">
+
+      <div className='inline-flex'>   
+        <h1 className="relative top-0 text-5xl text-center text-start">Ben Edmiston</h1>
+        <img src="https://avatars.githubusercontent.com/u/77869567?s=400&u=000e963c53758701e07014fa9bb810146f5887c7&v=4" alt="Benjamin Edmiston" 
+          className=" size-12 " />
       </div>
+      <div className="">
+        <SidebarLayout />
+      </div>
+    </div>
   );
 }
 
 export default App;
+
+// <Header />
+
+/*          */
