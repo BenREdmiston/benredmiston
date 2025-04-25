@@ -8,10 +8,32 @@ const tabs = [
 ];
 
 const tabContent = {
-  home: "Welcome to the Home page!",
-  about: "Here's some information About us.",
-  services: "These are our Services.",
-  contact: "Get in touch on the Contact page.",
+  home: (
+    <div> 
+      <h1 className="text-2xl font-bold">Home</h1>
+      <p className="mt-4">This website is currently under construction.
+      <br />
+      Please check back later!
+      </p>
+    </div>
+    ),
+  about: (
+    <div> 
+      <h1 className="text-2xl font-bold">About</h1>
+    </div>
+    ),
+  services: (
+  <div>
+    <h1 className="text-2xl font-bold">Services</h1>
+    <p className="mt-4">We offer a variety of services to help you succeed.</p>
+  </div>
+  ),
+  contact: (
+    <div>
+      <h1 className="text-2xl font-bold">Contact</h1>
+      <p className="mt-4">Feel free to reach out to us for any inquiries.</p>
+    </div>
+  ),
 };
 
 const SidebarLayout = () => {
@@ -35,7 +57,7 @@ const SidebarLayout = () => {
       </aside>
 
       {/* Main content */}
-      <main className="flex-1 p-6 bg-gray-100 overflow-auto">
+      <main className="flex-1 p-6 bg-gray-800 overflow-auto">
         <div className="text-xl font-medium">{tabContent[activeTab]}</div>
       </main>
     </div>
