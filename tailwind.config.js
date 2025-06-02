@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'tiled-avatar': "url('./components/images/CyberpunkBenAvatar.png')",
+      },
       transform: {
         'preserve-3d': 'preserve-3d',
       },

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const tabs = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "services", label: "Services" },
+  { id: "portfolio", label: "Portfolio" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -11,7 +11,8 @@ const tabContent = {
   home: (
     <div> 
       <h1 className="text-2xl font-bold">Home</h1>
-      <p className="mt-4">This website is currently under construction.
+      <p className="mt-4 max-w-2xl">Our website is currently undergoing an exciting transformation! We're busy behind the scenes, building a new and improved online experience for you. Please bear with us as we work to bring you updated content, enhanced features, and a more user-friendly design. We appreciate your patience and look forward to unveiling our new site very soon!
+      <br />
       <br />
       Please check back later!
       </p>
@@ -20,18 +21,20 @@ const tabContent = {
   about: (
     <div> 
       <h1 className="text-2xl font-bold">About</h1>
+      <p className="mt-4 max-w-2xl">I'm Ben, an aspiring web designer. This site is my portfolio, showcasing my journey and projects in web design. My focus is on clean design, intuitive user interfaces, and effective online presence. I'm eager to apply my skills and grow within the web design industry.</p>
     </div>
     ),
-  services: (
+  portfolio: (
   <div>
-    <h1 className="text-2xl font-bold">Services</h1>
-    <p className="mt-4">We offer a variety of services to help you succeed.</p>
+    <h1 className="text-2xl font-bold">Portfolio</h1>
+    <p className="mt-4 max-w-2xl">NewGen3DPrint - Store/Showcase Website</p>
   </div>
   ),
   contact: (
     <div>
-      <h1 className="text-2xl font-bold">Contact</h1>
-      <p className="mt-4">Feel free to reach out to us for any inquiries.</p>
+      <a href="https://x.com/ben_edmiston" target="_blank" rel="noopener noreferrer">X</a>
+      <br />
+      <a href="mailto:ben.r.edmiston@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
     </div>
   ),
 };
@@ -65,5 +68,3 @@ const SidebarLayout = () => {
 };
 
 export default SidebarLayout;
-// This code creates a sidebar layout with tabs using React. The sidebar contains buttons for different tabs, and clicking on a button updates the main content area to display the corresponding content. The layout is responsive, adjusting to different screen sizes using Tailwind CSS classes.
-// The sidebar is styled with a dark background, and the active tab is highlighted. The main content area has a light background and displays the content based on the selected tab. The layout is designed to be user-friendly and visually appealing, making it suitable for various applications.
