@@ -43,7 +43,7 @@ const SidebarLayout = () => {
   const [activeTab, setActiveTab] = useState("home");
 
   return (
-    <div className="flex flex-col md:flex-row h-screen">
+    <div className="flex flex-col md:flex-row  lg:space-x-10 lg:size-3/4">
       {/* Sidebar */}
       <aside className="bg-gray-800 text-white w-full md:w-64 flex md:flex-col md:h-full overflow-x-auto">
         {tabs.map((tab) => (
@@ -60,7 +60,7 @@ const SidebarLayout = () => {
       </aside>
 
       {/* Main content */}
-      <main className="flex-1 p-6 bg-gray-800 overflow-auto">
+      <main className="flex-1 p-6 bg-gray-800 bg-opacity-75 overflow-auto">
         <div className="text-xl font-medium">{tabContent[activeTab]}</div>
       </main>
     </div>

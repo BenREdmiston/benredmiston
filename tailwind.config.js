@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'tiled-avatar': "url('./components/images/CyberpunkBenAvatar.png')",
+        'tiled-avatar': "url('./components/images/CBPBackgroundTiled.png')",
+      },
+      backgroundSize: {
+        'small': '500px',
       },
       transform: {
         'preserve-3d': 'preserve-3d',

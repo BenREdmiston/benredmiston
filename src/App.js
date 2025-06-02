@@ -6,7 +6,7 @@ import CyberpunkBenAvatar from './components/images/CyberpunkBenAvatar.png';
 
 function App() {
   return ( 
-    <div className="relative flex-row bg-gray-800 text-white h-screen bg-tiled-avatar bg-repeat">
+    <div className="relative flex-row bg-gray-800 text-white h-screen bg-tiled-avatar bg-repeat bg-small">
 
       <div className='inline-flex space-x-10'>   
         <h1 className="relative top-0 text-5xl text-start">Ben Edmiston</h1>
