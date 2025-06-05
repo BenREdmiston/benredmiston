@@ -43,14 +43,14 @@ const SidebarLayout = () => {
   const [activeTab, setActiveTab] = useState("home");
 
   return (
-    <div className="flex flex-col md:flex-row  md:space-x-10 md:py-10">
+    <div className="flex flex-col md:py-10">
       {/* Sidebar */}
-      <aside className="bg-gray-800 text-white w-full md:w-64 flex md:flex-col md:h-full overflow-x-auto ">
+      <aside className="flex bg-gray-800 text-white w-full overflow-x-auto "> 
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`flex-1 md:flex-none px-4 py-3 text-center hover:bg-gray-700 transition font-sarpanch ${
+            className={`flex-1 px-4 py-3 text-center hover:bg-gray-700 transition font-sarpanch ${
               activeTab === tab.id ? "bg-gray-700 font-semibold" : ""
             }`}
           >
@@ -60,7 +60,7 @@ const SidebarLayout = () => {
       </aside>
 
       {/* Main content */}
-      <main className="flex p-12 bg-gray-800 bg-opacity-75 overflow-auto font-sarpanch text-center justify-center size-full md:w-3/4">
+      <main className="flex p-12 bg-gray-800 bg-opacity-75 overflow-auto font-sarpanch text-center justify-center size-full h-3/4">
         <div className="text-xl font-medium ">{tabContent[activeTab]}</div>
       </main>
     </div>
