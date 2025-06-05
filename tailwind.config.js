@@ -15,6 +15,10 @@ module.exports = {
       transform: {
         'preserve-3d': 'preserve-3d',
       },
+      fontFamily: {
+        michroma: ['Michroma', 'sans-serif'], // Add Michroma font
+        sarpanch: ['Sarpanch', 'sans-serif'], // Add Sarpanch font
+      },
     },
   },
   plugins: [],
